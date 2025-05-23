@@ -12,6 +12,6 @@ const argv = yargs(hideBin(process.argv))
 }).argv
 
 const cityName = argv.city;
-console.log(`Gathering weather data for ${cityName}...`);
+console.log(`\nFetching ${cityName} weather data...`);
 
 showData.showWeatherData(cityName);
