@@ -29,8 +29,8 @@ let cities = {
 
 function showWeatherData(city) {
     let lCity = city.toLowerCase();
-    console.log(chalk.bgBlue.bold(`\n${city} Weather Report`));
-    console.log(chalk.red(`Temperature: ${cities[lCity].temperature}\u00B0 F`));
+    console.log(chalk.bgRed.bold(`\n***${city.toUpperCase()} WEATHER REPORT***`));
+    console.log(chalk.cyan(`Temperature: ${cities[lCity].temperature}\u00B0 F`));
     console.log(chalk.yellow(`Conditions: ${cities[lCity].conditions}`));
     console.log(chalk.green(`Humidity: ${cities[lCity].humidity}%`));
     console.log(chalk.hex('#800080')`Wind Speed: ${cities[lCity].windSpeed} mph`);
